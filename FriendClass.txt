@@ -1,0 +1,45 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+//FRIEND CLASS 
+
+#include <iostream>
+
+using namespace std;
+class A 
+{
+    int a,b;
+    public:
+    void input()
+    {
+        cout<<"Enter two numbers for class A:"<<endl;
+        cin>>a>>b;
+    }
+    
+    friend class B;
+};
+
+class B
+{
+    int c;
+    public:
+    void add(A obj)
+    {
+        c = obj.a + obj.b;
+        cout<<"Addition of a and b from A class is :"<<c<<endl;
+    }
+    
+};
+int main()
+{
+    A oo;
+    oo.input();
+    
+    B kk;
+    kk.add(oo);
+    
+}

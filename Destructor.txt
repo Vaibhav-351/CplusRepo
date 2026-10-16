@@ -1,0 +1,47 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+// destructor : it destroy objectand release the memory when scope of obj ends. 
+//Destrcutr gets automaatically called at the end of object scope
+ 
+#include <iostream>
+using namespace std;
+
+int count =0; // global counter variable
+class demo
+{
+    public:
+    demo() // default construcotr
+    {
+        count++;
+        cout<<"Number of object created: "<<count<<endl;
+    }
+    
+    ~demo() // destructor created
+    {
+        count--;
+        cout<<"Number of object destroyed: "<<count<<endl;
+    }
+    
+}; 
+
+int main()
+{ // start of scope or life of object aa,bb,cc
+    demo aa;
+    demo bb;
+    demo cc;
+    {                             // // start of scope or life of object dd
+        demo dd;
+        
+    }                            //// start of scope or life of object dd
+    
+}// End of scope or life of object aa,bb,cc
+
+/*
+
+
+*/

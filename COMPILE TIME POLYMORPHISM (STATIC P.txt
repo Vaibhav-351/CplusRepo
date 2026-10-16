@@ -1,0 +1,29 @@
+//COMPILE TIME POLYMORPHISM (STATIC POLYMORPHISM)
+
+//WAP for compile time polymorphism (using function overloading)
+
+#include <iostream>
+using namespace std;
+class A 
+{
+    float a,b;
+    public:
+    void show(int x,int y)
+    {
+        a=x;
+        b=y;
+        cout<<"a is "<<a<<" "<<"b is "<<b<<endl;
+    }
+    void show(double x,double y)
+    {
+        a=x;
+        b=y;
+        cout<<"a is"<<a<<" "<<"b is"<<b<<endl;
+    }
+};
+int main()
+{
+    A obj,obj2;
+    obj.show(10,20);
+    obj.show(10.5,20.5);
+}

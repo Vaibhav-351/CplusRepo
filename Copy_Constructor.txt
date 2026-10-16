@@ -1,0 +1,49 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+// COPY constructor
+#include <iostream>
+
+using namespace std;
+
+class demo
+{
+    int a;
+    
+    public:
+    demo() //default constructor
+    {
+        a = 10;
+    };
+    
+    demo(demo &z) //copy constructor created
+    {
+        a = z.a; // this is value given by normal consturctor.. and we are copying/assigning that value to class's a variable
+    };
+    
+    void putdata()
+    {
+        cout<<"A is: "<<a<<endl;
+    };
+};
+
+int main()
+{
+
+    demo aa; // a = 10
+    demo bb(aa); // a = 10
+    
+    demo cc = bb; // a =10
+    
+    aa.putdata();
+    bb.putdata();
+    cc.putdata();
+    
+    
+    
+
+}

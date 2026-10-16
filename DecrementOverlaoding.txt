@@ -1,0 +1,51 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#WAP FOR PREFIX AND POSFIX DECREMENT, USING FUNCTION OVERLOADING
+#include <iostream>
+
+using namespace std;
+class demo
+{
+    int x;
+    public:
+    void getdata()
+    {
+        cout<<"ENter x= "<<endl;
+        cin>>x;
+    }
+    
+    void putdata()
+    {
+        cout<<"X is :"<<x<<endl;
+    }
+
+    // HERE DONE FUNCTION OVERLOADING
+    void operator--()
+    {
+       
+        x = x-1;
+        cout<<"I am prefix called: x is :"<<x<<endl;
+    }
+    void operator-- (int)
+    {
+        
+        x = x-1;
+        cout<<"I am overloaded function for postfix: x is : "<<x<<endl;
+    }
+};
+
+int main()
+{
+ demo aa;
+ aa.getdata();
+ aa.putdata();
+ 
+ --aa; //prrfix decrement
+ aa--; //postfix decerement
+ aa.putdata();
+}

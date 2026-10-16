@@ -1,0 +1,46 @@
+/******************************************************************************
+
+run time polymorphism using function overriding
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+class A 
+{
+    public:
+    void show()
+    {
+        cout<<"This is base class"<<endl;
+    }
+};
+
+class B:public A 
+{
+    public:
+    void show()
+    {
+        cout<<"This is derived class"<<endl;
+    }
+    
+};
+
+int main()
+{
+    // NORMAL WAY 
+    /*A obj_a;
+    obj_a.show();
+    
+    B obj_b;
+    obj_b.show();
+    */
+    
+    //USING POINTER TO OBJ
+     A *p; // BASE CLASS POINTER CREATED
+     B ob; //DERIVED CLASS OBJ CREATED
+     p = &ob; // BASE CLASS POINTER HOLDING ADDRESS OF DERIVED CLASS OBJ 
+     p->show(); // CALLING BASE CLASS'S FUNCTION USING POINTER
+     ob.show(); //preference jis class ka obj bana usko ,milta hia
+
+
+}
