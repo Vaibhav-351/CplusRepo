@@ -28,6 +28,13 @@ class B:public A
     {
 	String name = "XYZ";
         cout<<"This is derived class"<<endl;
+        int i = 10; // repo change
+
+	String Demoname = "ABX"; // local change
+
+
+
+        cout<<"This is base class"<<endl;
     }
     
 };
