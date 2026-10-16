@@ -12,6 +12,7 @@ class A
     void show()
     {
         int i = 10;
+	String Demoname = "ABX";
         cout<<"This is base class"<<endl;
     }
 };
