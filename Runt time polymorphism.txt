@@ -11,6 +11,7 @@ class A
     public:
     void show()
     {
+        int i = 10;
         cout<<"This is base class"<<endl;
     }
 };
