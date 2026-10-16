@@ -20,6 +20,7 @@ class B:public A
     public:
     void show()
     {
+	String name = "XYZ";
         cout<<"This is derived class"<<endl;
     }
     
