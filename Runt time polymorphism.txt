@@ -11,8 +11,12 @@ class A
     public:
     void show()
     {
-        int i = 10;
-	String Demoname = "ABX";
+        int i = 10; // repo change
+
+	String Demoname = "ABX"; // local change
+
+
+
         cout<<"This is base class"<<endl;
     }
 };
