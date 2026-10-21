@@ -17,6 +17,7 @@ class demo
     public:
     demo() // default construcotr
     {
+	cout PRIOIRITY
         count++;
         cout<<"Number of object created: "<<count<<endl;
     }
