@@ -15,8 +15,10 @@ int count =0; // global counter variable
 class demo
 {
     public:
+    int i = 10 ;//this is for develop feature branch
     demo() // default construcotr
     {
+	cout PRIOIRITY
         count++;
         cout<<"Number of object created: "<<count<<endl;
     }
